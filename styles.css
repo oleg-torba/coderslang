@@ -225,11 +225,56 @@ footer{
     .container{
         max-width: 960px;
     }
+
+    .content h1{
+        font-size: 60px;
+        line-height: 70px;
+    }
 }
 
 @media all and(max-width: 992px){
     .container{
         max-width: 720px;
+    }
+
+    .banner-section{
+        padding-bottom: 40px;
+
+    }
+
+    .banner-section .row{
+        grid-template-columns: auto;
+    }
+
+    .description-section .row {
+        grid-template-columns: auto;
+    }
+
+    .column-offset{
+        margin-left: 0;
+    }
+
+    .description-section:nth-child(3) .row .column:first-child {
+        order: 2;
+    }
+
+    .banner-section .app-buttons
+     {justify-content: flex-start;}
+    .content h1{
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .banner-section .app-buttons a:first-child {
+        margin-left: 0;
+    }
+    .section-image img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .comments-section .columns-view {
+       grid-template-columns:  repeat(2, 1fr);
     }
 }
 
@@ -237,10 +282,46 @@ footer{
     .container{
         max-width: 540px;
     }
+
+    .content h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+   
 }
 
 @media all and(max-width: 575px){
     .container{
         max-width: 90vw;
+    }
+    .app-buttons{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .app-buttons a{
+        margin-left: 0;
+    }
+    .join-section .app-buttons a{
+        margin: 0 auto;
+    }
+
+    .comments-section .columns-view{
+        grid-template-columns: auto;
+    }
+    .columns-view {
+        grid-template-columns: auto;
+    }
+
+    .section-image img {
+        max-width: 80vw;
+    }
+
+    .description-section .content{
+        padding-top: 0;
+    }
+
+    .header-btn{
+        display: none;
     }
 }
